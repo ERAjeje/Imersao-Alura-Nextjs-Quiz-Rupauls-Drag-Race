@@ -48,7 +48,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl='' />
+      <GitHubCorner projectUrl='https://github.com/ERAjeje/Imersao-Alura-Nextjs-Quiz-Rupauls-Drag-Race' />
     </QuizBackground>
   );
 }
