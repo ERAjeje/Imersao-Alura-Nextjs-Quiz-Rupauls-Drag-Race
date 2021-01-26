@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Widget = styled.div`
 margin: 24px auto;
-border: 1px solid ${({ theme }) => theme.colors.primary};
 background-color: ${({ theme }) => theme.colors.mainBg};
 border-radius: 4px;
 overflow: hidden;
