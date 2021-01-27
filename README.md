@@ -69,7 +69,7 @@ export default styled(StyledLink)`
 import StyledLink from '../components/StyledLink'
 
 export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
+  <StyledLink href='/post/[pid]' forwardedAs='/post/abc'>
     First post
   </StyledLink>
 )
