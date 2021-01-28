@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
-export const Widget = styled.div`
+const Widget = styled.div`
 margin: 24px auto;
 background-color: ${({ theme }) => theme.colors.mainBg};
 border-radius: 4px;
@@ -46,3 +47,5 @@ ul {
   padding: 0;
 }
 `;
+
+export default Widget;

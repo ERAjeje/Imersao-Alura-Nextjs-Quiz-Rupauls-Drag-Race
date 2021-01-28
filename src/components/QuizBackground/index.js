@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
-export const QuizBackground = styled.div`
+const QuizBackground = styled.div`
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -10,7 +11,7 @@ export const QuizBackground = styled.div`
   @media screen and (max-width: 500px) {
     background-image: none;
     &:after {
-      content: "";
+      content: '';
       background-size: cover;
     background-position: center;
       background-image:
@@ -31,3 +32,5 @@ export const QuizBackground = styled.div`
     }
   }
 `;
+
+export default QuizBackground;

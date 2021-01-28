@@ -1,5 +1,10 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import bd from '../db.json';
+import Heather from '../src/components/Heather';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -23,17 +28,18 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-`
+`;
 
-const theme = bd.theme
+const { theme } = bd;
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Heather />
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
