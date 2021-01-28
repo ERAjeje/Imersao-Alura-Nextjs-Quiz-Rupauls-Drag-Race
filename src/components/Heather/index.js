@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 /* eslint-disable import/no-unresolved */
 import React from 'react';
@@ -8,6 +9,7 @@ function Heather({ quiz }) {
   const value = quiz || db.title;
   return (
     <Head>
+      <meta charSet="utf-8" />
       <title>
         AluraQuiz -
         {value}
