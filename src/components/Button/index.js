@@ -18,9 +18,13 @@ const Button = styled.button`
     
     &:enabled {
         &:hover {
-            background-color: ${({ color }) => color};
+            background-color: ${({ theme }) => theme.colors.primary};
             cursor: pointer;
         }
+    }
+    &:active,
+    &:focus {
+        outline: none;
     }
 `;
 
