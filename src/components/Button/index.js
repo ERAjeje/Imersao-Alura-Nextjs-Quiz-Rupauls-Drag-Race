@@ -22,6 +22,10 @@ const Button = styled.button`
             cursor: pointer;
         }
     }
+    &:active,
+    &:focus {
+        outline: none;
+    }
 `;
 
 export default Button;
